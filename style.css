@@ -1,0 +1,182 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+      /* Custom styles for the navbar */
+      .navbar {
+        border-top: 1px solid #ced4da; /* Gray top border */
+        border-bottom: 1px solid #ced4da; /* Gray bottom border */
+        padding-top: 10px; /* Add padding to separate from the border */
+        padding-bottom: 10px; /* Add padding to separate from the border */
+    }
+
+.btn-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.btn-group {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.btn-group .btn {
+    margin: 5px;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+#productRow {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensure equal height */
+    justify-content: space-around; /* Adjust space between items */
+}
+
+
+.col-md-4 {
+    flex: 0 0 calc(20% - 10px); /* Adjusted width for mobile view and reduced margin */
+    margin-bottom: 5px;
+    margin-right: 5px; /* Added margin-right to create space between images */
+}
+
+
+/* Mobile portrait view */
+@media (max-width: 575px) {
+    .col-md-4 {
+        flex: 0 0 calc(100% - 20px); /* Show one card per row */
+    }
+}
+
+/* Tablet and desktop view */
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 calc(33.333% - 20px); /* Reset width for tablet and desktop view */
+    }
+}
+
+#preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 1); /* Semi-transparent white background */
+        z-index: 9999; /* Ensure loader appears above other content */
+    }
+
+    #status {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .half-size {
+        font-size: 0.4em; /* Adjust the font size as needed */
+        margin: 5px;
+        margin-right:8px ;
+        color: #333;
+      }
+
+#navbarSupportedContent{
+ 
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+      
+}
+
+    .sticky-top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure the navbar is on top of other content */
+    }
+
+    .navbar-nav .nav-link {
+    font-size: large; /* Default font size */
+}
+
+.navbar-nav .nav-link:hover {
+    font-size: 1.2em; /* Increased font size on hover */
+}
+
+
+
+
+.scroll-container {
+   
+    height: 20vh;
+    margin-bottom: 20%;
+  }
+  
+  .carousel-primary,
+  .carousel-secondary {
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .carousel-primary img {
+    width: 33%;
+    margin-left: 20px;
+    border-radius: 14px;
+    
+  }
+  
+  .carousel-primary {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal 20s linear infinite;
+  }
+
+  @keyframes scroll-horizontal {
+    0% {
+      left: 100%;
+    }
+  
+    100% {
+      left: -100%;
+    }
+  }
+  
+  .carousel-primary:hover,
+  .carousel-primary:hover~.carousel-secondary {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .carousel-secondary:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  
+  .scroll-container:hover>.carousel-primary:not(:hover) {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Set a background color for the footer */
+    padding: 20px 0; /* Add padding to the top and bottom of the footer */
+    border-top: 1px solid #ccc; /* Add a border at the top of the footer */
+    text-align: center; /* Center align the content within the footer */
+}

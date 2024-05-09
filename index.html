@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regal</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <script>
+        // JavaScript to remove the loader after 3 seconds
+        document.addEventListener("DOMContentLoaded", function() {
+            var preloader = document.getElementById('preloader');
+            
+            function removeLoader() {
+                preloader.style.display = 'none';
+            }
+            
+            setTimeout(removeLoader, 1250); // Remove after 3 seconds
+        });
+    </script>
+</head>
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="logo">
+                <img src="images/regal-logo.jpg" height="220" class="d-block mx-auto" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+    <div style="height: 40px; text-align: right; display: flex; align-items: center; justify-content: right;">
+        <h1 style="margin: 5px; display: flex; align-items: center; padding: 5px;">
+          <i class="bi bi-envelope half-size" style="color: gray"></i>
+          <i class="bi bi-whatsapp half-size" style="color: gray"></i>
+          <i class="bi bi-instagram half-size" style="color: gray"></i>
+          <i class="bi bi-facebook half-size" style="color: gray"></i>
+        </h1>
+    </div>
+
+    <nav id="navbar" class="navbar position-sticky navbar-expand-lg navbar-light bg-white fixed-top">
+        <!-- Logo -->
+        <a class="navbar-brand" href="./index.html" style="margin-left:20px ;">
+            <img src="images/logo.png" alt="Logo" width="48">
+        </a>
+        <!-- Toggler button for small screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation items -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav" style="font-size: large;">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./products.html">PRODUCTS</a>
+                </li>
+                <li class="nav-item" style="margin-right: 70px;">
+                    <a class="nav-link" href="#footer">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="home" class="container py-5">
+        <div class="row mb-4 ">
+            <div class="col-lg-10 mx-auto text-center">
+                <!-- requires glightbox, please flag the option in the picostrap customizer panel -->
+                <div class="lc-block position-relative" id="lc-block">
+                    <img class="img-fluid rounded shadow" id="photomain" src="./images/Framegggggggggggggggg.png" width="3695" height="" alt="Photo">
+                </div>
+            </div><!-- /col -->
+        </div>
+    </div>
+
+    <!-- Product Gallery -->
+    <div class="container mb-10 " id="productContainer" style="font-family: Arial, sans-serif;">
+        <h2 class="text-center mb-10" style="margin-bottom: 40px;">Top Products</h2>
+        <div class="scroll-container ">
+            <div class="carousel-primary">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" alt="cat1" />
+                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="cat2" />
+                <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4" alt="cat3" />
+                <img src="https://images.unsplash.com/photo-1517451330947-7809dead78d5" alt="cat4" />
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" alt="cat5" />
+                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="cat6" />
+                <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4" alt="cat7" />
+                <img src="https://images.unsplash.com/photo-1517451330947-7809dead78d5" alt="cat8" />
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light mt-30 text-dark py-5" style="border-top: 1px solid #ccc; " id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html" style="font-decoration: none;">Home</a></li>
+                        <li><a href="#about" style="font-decoration: none;">About Us</a></li>
+                        <li><a href="./products.html" style="font-decoration: none;">Products</a></li>
+                        <li><a href="#footer
+                            " style="font-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Regal Steel Industries</p>
+                    <p>Kappur , Kanjirathani</p>
+                    <p>Palakkad</p>
+                  
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                   
+                    <p>anusreesteel@gmail.com</p>
+                    <p>+91 9745613436</p>
+                    <p>+91 9745322322</p>
+    
+    
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-10" style="border-top: 1px solid #ccc; margin-top: 0px;">
+            <p style="margin-top: 20px;">&copy; 2024 Regal Steel industries. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

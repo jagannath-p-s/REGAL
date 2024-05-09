@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regal</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+
+    <style>
+        .btn-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 10px;
+        }
+        .btn-group {
+            margin: 5px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .btn-group .btn {
+            margin: 5px;
+        }
+    </style>
+    
+<script>
+    // JavaScript to remove the loader after 3 seconds
+    document.addEventListener("DOMContentLoaded", function() {
+        var preloader = document.getElementById('preloader');
+        
+        function removeLoader() {
+            preloader.style.display = 'none';
+        }
+        
+        setTimeout(removeLoader, 1250); // Remove after 3 seconds
+    });
+</script>
+</head>
+<body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="logo">
+                    <img src="images/regal-logo.jpg" height="220" class="d-block mx-auto" alt="">
+                </div>
+               
+            </div>
+        </div>
+        <!-- Loader -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="home">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="images/logo.png" alt="Logo" width="48">
+            </a>
+            <!-- Toggler button for small screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navigation items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="container" id="productContainer" style="font-family: Arial, sans-serif; margin-top: 60px;">
+        <h2 class="text-center mb-5">Top Products</h2>
+        <!-- Category selection buttons -->
+        <div class="btn-container">
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-secondary" id="loadAllBtn">All Products</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="filterByCategory('blackofficechais')">Black Office Chairs</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="filterByCategory('colegedesks')">College Desks</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="filterByCategory('collegechairs')">College Chairs</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="filterByCategory('hostelbeds')">Hostel Beds</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="filterByCategory('officechairs')">Office Chairs</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="filterByCategory('restaurantchais')">Restaurant Chairs</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="filterByCategory('sofa')">Sofa</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="filterByCategory('steelchais')">Steel Chairs</button>
+            </div>
+        </div>
+        <!-- Product gallery -->
+        <div class="container" style="font-family: Arial, sans-serif;">
+            <div class="row" id="productRow"></div>
+            <div class="text-center mt-3">
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

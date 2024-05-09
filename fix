@@ -1,0 +1,20 @@
+ <style>
+        /* Custom CSS for scroll container */
+        .scroll-container {
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            overflow-y: auto; /* Show vertical scrollbar */
+            max-height: calc(100vh - 200px); /* Adjust according to your layout */
+        }
+
+        /* Adjustments to avoid scrollbar overlap */
+        .container {
+            overflow: hidden;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+
+
+    
